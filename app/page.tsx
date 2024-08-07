@@ -188,7 +188,7 @@ export default function Home() {
       <main className="mt-12 flex w-full flex-1 flex-col items-center px-4 text-center sm:mt-20">
         <a
           className="mb-4 inline-flex h-7 shrink-0 items-center gap-[9px] rounded-[50px] border-[0.5px] border-solid border-[#E6E6E6] bg-[rgba(234,238,255,0.65)] bg-gray-100 px-7 py-5 shadow-[0px_1px_1px_0px_rgba(0,0,0,0.25)]"
-          href="https://dub.sh/together-ai"
+          href="https://dub.sh/together-ai/?utm_source=example-app&utm_medium=llamacoder&utm_campaign=llamacoder-app-signup"
           target="_blank"
         >
           <span className="text-center">
@@ -372,23 +372,23 @@ export default function Home() {
                   files={{
                     "App.tsx": generatedCode,
                     "/public/index.html": `<!DOCTYPE html>
-<html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdn.tailwindcss.com"></script>
-  </head>
-  <body>
-    <div id="root"></div>
-  </body>
-</html>`,
+                    <html lang="en">
+                      <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>Document</title>
+                        <script src="https://cdn.tailwindcss.com"></script>
+                      </head>
+                      <body>
+                        <div id="root"></div>
+                      </body>
+                    </html>`,
                   }}
                   template="react-ts"
                   customSetup={{
                     dependencies: {
-                      "lucide-react": "0.263.1",
-                      recharts: "latest",
+                      "lucide-react": "latest",
+                      recharts: "2.9.0",
                     },
                   }}
                 />
